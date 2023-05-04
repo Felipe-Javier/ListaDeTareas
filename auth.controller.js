@@ -3,6 +3,9 @@ const bcrypt = require('bcrypt')
 const { expressjwt } = require('express-jwt')
 const jwt = require('jsonwebtoken')
 const User = require('./user.model')
+const dotenv = require('dotenv')
+
+dotenv.config()
 
 const validateJwt = expressjwt({ secret: process.env.SECRET, algorithms: ['HS256'] })
 

@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const app = express()
 const Tarea = require('./tarea.controller')
 const { Auth, isAuthenticated } = require('./auth.controller')
-const port = 3000
+
 
 mongoose.connect('mongodb+srv://felipe:elpipepon00@cluster0.laqngnr.mongodb.net/ListaTareas?retryWrites=true&w=majority')
 
@@ -18,6 +18,7 @@ app.delete('/tareas/:id', isAuthenticated, Tarea.destroy)
 app.post('/login', Auth.login)
 app.post('/register', Auth.register)
 
+app.set('port', process.env.PORT || 3000)
 
 app.use(express.static('app'))
 
@@ -28,6 +29,6 @@ app.get('*', (req, res) => {
 	res.status(404).send('Esta página no existe :(')
 })
 
-app.listen(port, () => {
+app.listen(app.get('port'), () => {
 	console.log('Arrancando la aplicación!')
 })
