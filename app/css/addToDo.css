@@ -1,0 +1,112 @@
+:root{
+    --color-red: #e44232;
+    --color-white: #fff;
+    --color-background: #ecf0f3;
+    --color-black: #202124;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-background);
+    color: var(--color-black);
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    box-sizing: border-box; 
+}
+
+.container-logout {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color-red);
+} 
+
+.container-logout input[type=image]{
+    filter: invert(100%) sepia(75%) saturate(1202%) hue-rotate(179deg) brightness(106%) contrast(90%) ; 
+    width: 17px;
+}
+
+.container-logout a {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    color: var(--color-background);
+    outline: none;
+    text-decoration: none;
+}
+
+.container-logout a:hover {
+    text-decoration: revert;
+} 
+
+.container-brand {
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+    background-color: var(--color-red);
+}
+.container-brand h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+span {
+    font-size: 25px;
+    display: flex;
+    margin-left: 15%;
+    font-weight: bold;
+    color: var(--color-red);
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#tarea-form {
+    display: flex; 
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+#tarea-form input[type=text] { 
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    border: none;
+    border-bottom: 1px solid darkgray;
+    width: 49%;
+}
+
+#tarea-form input[type=text]:focus-visible {
+    outline: none;
+}
+
+#tarea-form input[type=image] { 
+    width: 20px;
+    filter: invert(37%) sepia(37%) saturate(5169%) hue-rotate(345deg) brightness(96%) contrast(86%);
+    cursor: pointer;
+}
+
+#tarea-list {
+    padding: 0px;
+    margin-left: 15%;
+    width:auto;
+    list-style:none;
+    word-wrap: break-word;
+}
+
+#tarea-list div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#tarea-list div li {
+    width: 47%;
+    padding: 10px;
+    border-bottom: 1px solid darkgray;
+}
+
+#tarea-list input[type=image] {
+    width: 20px;
+    filter: invert(37%) sepia(37%) saturate(5169%) hue-rotate(345deg) brightness(96%) contrast(86%);
+    cursor: pointer;
+}

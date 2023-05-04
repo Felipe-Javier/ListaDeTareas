@@ -1,0 +1,123 @@
+:root{
+    --color-red: #e44232;
+    --color-white: #fff;
+    --color-background: #ecf0f3;
+    --color-black: #202124;
+}
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-background);
+    overflow: hidden; 
+    color: var(--color-black);
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+    box-sizing: border-box;
+}
+.container-main {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items:center;
+    overflow: hidden; 
+}
+
+.container-brand-login {
+    margin-top: -34px;
+    height: 300px;
+    width: 100%;
+    background-color: var(--color-red);
+    z-index: 1;
+    text-align: center;
+}
+
+.container-brand-login h1 {
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: lighter;
+    color: var(--color-white);
+}
+
+.container-login {
+    margin-top: 200px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: var(--color-background);
+    box-shadow: 5px 5px 20px #888e94;
+    z-index: 10;
+}
+
+.tittle {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--color-red);
+    letter-spacing: 1px;
+}
+
+.container-main .inputs {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.container-main label, input, button, a, #error{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container-main label {
+    margin-bottom: 4px;
+}
+
+.container-main label:nth-of-type(2){
+    margin-top: 12px;
+}
+
+.container-main input{
+    background: var(--color-background);
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset -1px -5px 20px #cbced1;
+}
+
+.container-main button {
+    color:var(--color-white);
+    margin-top: 20px;
+    background: var(--color-red);
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+}
+
+.container-main button:hover {
+    box-shadow: none;
+}
+
+.container-main a{
+    font-weight:bolder;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--color-red);
+    margin-top: 20px;
+}
+
+#error {
+    font-size: 12px;
+    margin-top: 20px;
+}
