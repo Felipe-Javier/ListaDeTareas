@@ -104,7 +104,7 @@ const loadRegisterTemplate = () => {
                 <div class="tittle">Register</div>
                 <div class="inputs">
                     <label for="">User</label>
-                    <input type="text" name="user" required>
+                    <input type="text" name="user" minlength="4" required>
                     <label for="">Password</label>
                     <input type="password" name="password" required>
                     <button type="submit">Register</button>
